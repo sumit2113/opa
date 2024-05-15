@@ -8,6 +8,7 @@ Open Policy Agent on Dockers and Kubernetes
 opa run --server docker.rego
 
 //Once OPA server is running , run the main.go file
+
 go run main.go
 
 //Once the Go application is running, user can access the following API endpoints using Postman
@@ -27,5 +28,6 @@ To run a Docker container with a specific image: GET http://localhost:8080/run/{
 opa eval --data policy.rego --input input.json "data.kubernetes.admission"
 
 //Command to run the golang file
+
 go run main.go
 
